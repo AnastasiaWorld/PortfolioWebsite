@@ -533,4 +533,10 @@ body{
         font-size: 14px;
         height:50vh;
     }
+    .row6{
+        height: calc(150vw + 300vw + 6vh + 38vh + 100px);
+    }
+    .row6 .r-1-mobile-2{
+        height: 180vw;
+    }
 }
