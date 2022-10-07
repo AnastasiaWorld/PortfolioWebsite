@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crystal Home</title>
+    <script type="text/javascript" src="scripts.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="media/fav1.png">
+</head>
+
+<body>
+    <div class="grid-container">
+        <!--**************************************** Black Small Grid ******************************************-->
+        <div class="item1">New Arrivals | Order Now</div>
+        <!--****************************************Search Logo Register Login Shop ******************************************-->
+        <div class="item3">
+            <div class="search">
+                <div class="box">
+                <i class="fas fa-search"></i>
+                <input type="search" name="search" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="index.html"><img src="media/crystal.png"></a>
+            </div>
+
+            <div class="log">
+                <h3><a href="login.html">Login</a> | <a href="register.html">Register</a> | <a href="#" title="Shopping bag"><i class="fas fa-shopping-cart"></i></a></h3>
+            </div>
+
+            <div class="search-menu-mobile" id="search-menu-mobile">
+                <div class="search-mobile">
+                    <div class="box">
+                        <i class="fas fa-search"></i>
+                        <input type="search" name="search" placeholder="Search">
+                        </div>
+                </div>
+                <div class="menu" onclick="revealMobileMenu()"><i class="fas fa-bars fa-2x"></i></div>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <a href="#" class="title" id="mobile-title" touchstart="changeTitle()">Seatings</a>
+                <a href="#" class="title" id="mobile-title">Tables</a>
+                <a href="#" class="title" id="mobile-title">Bed</a>
+                <a href="#" class="title-lr" id="mobile-title">Login</a>
+                <a href="#" class="title-lr" id="mobile-title">Register</a>
+                <a href="#" class="title-lr" id="mobile-title"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+        </div>
+        <!--****************************************** Sticky Categories Menu****************************************-->
+        <div class="item2" id="item2">
+                <ul>
+                    <li><a href="#"><h3>New arrivals</h3></a></li>
+                    <li onmouseover="revealMenu()" onmouseout="hideMenu()"><a href="#"><h3>Living room <i class="fas fa-caret-down"></i></h3></a></li>
+                    <li><a href="#"><h3>Kitchen</h3></a></li>
+                    <li><a href="#"><h3>Bathroom</h3></a></li>
+                    <li><a href="#"><h3>Balcony</h3></a></li>
+                    <li><a href="#"><h3>Decorations</h3></a></li>
+                    <li><a href="#"><h3>Jewerly</h3></a></li>
+                </ul>
+                <!-- Mega Menu -->
+                <div class="menuparent">
+                <div class="dropmenu" id="megamenu1" onmouseover="revealMenu()" onmouseout="hideMenu()">
+                    <div class="tab1">
+                    </div>
+                    <div class="tab1">
+                        <a href="#" class="titre"><h5>Seatings</h5></a>
+                        <a href="#" class="soustitre"><h5>Accent chairs</h5></a>
+                        <a href="#" class="soustitre"><h5>Chairs and ottoman sets</h5></a>
+                        <a href="#" class="soustitre"><h5>Dinning chairs</h5></a>
+                        <a href="#" class="soustitre"><h5>Office chairs</h5></a>
+                        <a href="#" class="soustitre"><h5>Sofas</h5></a>
+                        <a href="#" class="soustitre"><h5>Bar stools</h5></a>
+                    </div>
+                    <div class="tab1">
+                        <a href="#" class="titre"><h5>Tables</h5></a>
+                        <a href="#" class="soustitre"><h5>Ottoman</h5></a>
+                        <a href="#" class="soustitre"><h5>Spanish</h5></a>
+                        <a href="#" class="soustitre"><h5>Italian</h5></a>
+                    </div>
+                    <div class="tab1">
+                        <a href="#" class="titre"><h5>Beds</h5></a>
+                        <a href="#" class="soustitre"><h5>Accent chairs</h5></a>
+                        <a href="#" class="soustitre"><h5>Chairs and ottoman sets</h5></a>
+                        <a href="#" class="soustitre"><h5>Sofas</h5></a>
+                        <a href="#" class="soustitre"><h5>Bar stools</h5></a>
+                    </div>
+                    <div class="tab1"></div>
+                </div>
+                </div>
+                <!-- End Mega Menu -->
+        </div>
+        <!--**************************************** Salon Big Image ******************************************-->
+        <div class="item4">
+            <div class="left"><i class="fas fa-caret-left fa-4x fa-color" onclick="fleche()"></i></div>
+            <div class="part1" id="part1">
+                <h1>Curated by Brooke Wise</h1>
+                <p>Explore a far-out collection of fine art, furniture and decor handpicked by this influental contemporary-art curator.</p>
+                <button class="myBtn">Order Now</button>
+            </div>
+            <div class="part2" id="part2">
+                <h1>Falling in Love</h1>
+                <p>Don't miss your chance to nab a truly beautiful ring</p>
+                <button class="myBtn">Order Now</button>
+            </div>
+            <div class="right"><i class="fas fa-caret-right fa-4x fa-color" onclick="fleche()"></i></div>
+        </div>
+        <!--**************************************** Content of website ******************************************-->
+        <!-- ********************* Flash Deals ********************** -->
+        <div class="item5 reveal" id="item5">
+            <div class="titre">
+                <h1><i class="fas fa-tags fa-color"></i> Flash Deals</h1>
+                <p>Up to 90% off ! Make the deal now !</p>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="media/off-product1.webp">
+                    <h2>Save 50% !</h2>
+                    <h3>Starting at $50</h3>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+                </div>
+                <div class="product">
+                    <img src="media/off-product2.jpg">
+                    <h2>Save 70% !</h2>
+                    <h3>Starting at $39.99</h3>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+                </div>
+                <div class="product">
+                    <img src="media/off-product3.webp">
+                    <h2>Save 40% !</h2>
+                    <h3>Starting at $20</h3>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+                </div>
+                <br>
+                <div class="product">
+                    <img src="media/off-product4.webp">
+                    <h2>Save 90% !</h2>
+                    <h3>Starting at $10</h3>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+                </div>
+                <div class="product">
+                    <img src="media/off-product5.webp">
+                    <h2>Save 10% !</h2>
+                    <h3>Starting at $10</h3>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+                </div>
+                <div class="product">
+                    <img src="media/off-product6.webp">
+                    <h2>Save 30% !</h2>
+                    <h3>Starting at $10</h3>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+                </div>
+                <div class="see-more"><button>See More >></button></div>
+            </div>
+
+        </div>
+        <!-- ********************* Categories ********************** -->
+        <div class="item6 reveal">
+            <div class="titre">
+                <h1>Check our categories</h1>
+            </div>
+            <div class="categories">
+
+                <div class="categorie1">
+                    <img src="media/bedroom.jpg">
+                    <div class="txt"><h2>Bedroom</h2></div>
+                </div>
+                <div class="categorie2">
+                    <img src="media/living-room.jpeg">
+                    <div class="txt"><h2>Living Room</h2></div>
+                </div>
+                <div class="categorie3">
+                    <img src="media/kitchen.jpg">
+                    <div class="txt"><h2>Kitchen</h2></div>
+                </div>
+                <div class="categorie4">
+                    <img src="media/jewerly2.jpg">
+                    <div class="txt"><h2>Jewerly</h2></div>
+                </div>
+                <div class="categorie5">
+                    <img src="media/decoration.webp">
+                    <div class="txt"><h2>Decorations</h2></div>
+                </div>
+                <div class="categorie6">
+                    <img src="media/bathroom.jpg">
+                    <div class="txt"><h2>Bathroom</h2></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ********************* Contact Us ********************** -->
+    </div> <!-- End Grid -->
+    <div class="item7 reveal">
+        <div class="tabs">
+            <div class="tab">
+                <a href="#">Location</a>
+                <a href="#">Lorem</a>
+                <a href="#">Ipsum</a>
+                <a href="#">Amet</a>
+                <br>
+            </div>
+            <div class="tab">
+                <a href="#">Contact Us</a>
+                <a href="#">Voluptas</a>
+                <a href="#">Expedita</a>
+                <a href="#">About Us</a>
+                <a href="#">Baetae</a>
+                </div>
+        </div>
+        <div class="subscribe">
+            <h4>Subscribe for exclusive access to our sale events, new arrivals, and more.</h4>
+            <div class="sub">
+                <div class="box">
+                <input type="subsribe" name="email" placeholder="Email Adress">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

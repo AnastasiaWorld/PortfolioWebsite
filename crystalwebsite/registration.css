@@ -1,0 +1,96 @@
+/* *************************************** REGISTRATION CSS ******************************************* */
+
+.register-container{
+    background-color: rgb(252, 223, 204);
+    background-image: url(media/kitchen.jpg);
+    background-size: cover; background-position: center;
+    width: 100vw;
+    height: calc(100vh - 190px); /* 35px 100px 55px .. 20px 100px 50px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing:border-box;
+    max-width:100%;
+}
+.register-box{
+    width: 35vw;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding-top: 40px; padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.register-box .row{
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+}
+.register-box .row input{
+    height: 40px;
+    width: 20vw;
+    border-radius: 20px;
+    border: 1px solid rgb(218, 195, 182);
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    box-shadow: 0px 3px 8px -6px rgba(0, 0, 0, 0.75);
+}
+.register-box .row input:focus{
+    border: 3px solid rgba(231, 141, 114, 0.911);
+    outline:none;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+.register-box .submit{
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+}
+.register-box .submit input{
+    background-color: rgba(231, 141, 114, 0.904);
+    color: white;
+    font-family: perpetua; font-size: 20px;
+    border: none;
+    height: 40px;
+    width: 20vw;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 0px 3px 8px -6px rgba(0, 0, 0, 0.75);
+}
+.register-box .submit input:hover{
+    outline: none;
+    background-color: rgba(231, 141, 114, 0.911);
+}
+.register-box .header h1{
+    padding:0;
+    margin:auto;
+    width: fit-content;
+    text-align: center;
+    font-family: perpetua;
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 1000px) and (min-width: 651px){
+    .register-box{
+        width: 70vw;
+    }
+    .register-box .row{
+        margin: 5vw;
+    }
+    .register-box .row input, .register-box .submit input {
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 650px){
+    .register-container{
+        position: relative;
+        height: 85vh;
+    }
+    .register-box{
+        width: 85vw;
+    }
+    .register-box .row{
+        margin: 5vw;
+    }
+    .register-box .row input, .register-box .submit input {
+        width: 70vw;
+    }
+}
