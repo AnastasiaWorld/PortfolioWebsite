@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Auora</title>
+  <link rel="icon" type="image/x-icon" href="media/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!--********************************** Top sticky Menu **********************************-->
+<div class="menu sticky-top"  style="position:fixed; width: 100vw;">
+<nav class="navbar navbar-expand-md navbar-fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand px-xl-3" href="javascript:void(0)">Auora</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <div class="navbar-inline">
+                <li class="nav-item px-xl-2 home" id="test">
+                    <a class="nav-link" href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Home"><i class="fa-solid fa-house fa-xl fa-color"></i></a>
+                </li>
+                <li class="nav-item px-xl-2 home">
+                    <a class="nav-link" href="javascript:void(0)"><i class="fas fa-tasks fa-xl fa-color"></i></a>
+                </li>
+                <li class="nav-item px-xl-2 home">
+                    <a class="nav-link" href="javascript:void(0)"><i class="fa-regular fa-pen-to-square fa-xl fa-color"></i></a>
+                </li>
+                <li class="nav-item px-xl-2 home">
+                    <a class="nav-link" href="javascript:void(0)"><i class="fa-solid fa-people-group fa-xl fa-color"></i></a>
+                </li>
+                <li class="nav-item px-xl-2 home">
+                    <a class="nav-link" href="javascript:void(0)"><i class="fa-regular fa-bell fa-xl fa-color"></i></a>
+                </li>
+                <div class="absolute-item">
+                    <div class="search-container">
+                        <form class="d-flex">
+                            <div class="search">
+                            <div class="box" id="box">
+                                <i class="fa-solid fa-magnifying-glass fa-color-search"></i>
+                                <input class="form-control me-2" id="searchquora" type="text" placeholder="Search Auora">
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="btn btn-light noneDisplay">Try Auora+</button>
+                </div>
+                <li class="nav-item home">
+                    <a class="nav-link px-xl-3 noneDisplay" href="javascript:void(0)"><i class="fa-solid fa-user-tie fa-lg fa-color-user"></i></a>
+                </li>
+                <li class="nav-item home">
+                    <a class="nav-link px-xl-3 noneDisplay" href="javascript:void(0)"><i class="fa-solid fa-globe fa-xl"></i></a>
+                </li>
+                </div>
+                <div class="btn-group question-button px-xl-2">
+                    <button type="button" class="btn btn-primary">Add Question</button>
+                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div> 
+
+
+
+<!--********************************** Content **********************************-->
+<div class="container-fluid container-parent overflow-hidden">
+    <div class="row justify-content-center">
+        <!--******************************** RESPONSES OF QUESTION ********************************-->
+        <div class="col-sm-12 col-md-5 responses mx-3 p-0"> <!-- col-sm-6 col-lg-5 -->
+            <!--***************** Ad *****************-->
+            <div class="responses-add">
+            <div class="card border-0">
+                <div class="card-header border-0">Who is Anastasia and what are your skills ?</div>
+                <div class="card-header row m-0 p-0 pb-1">
+                    <div class="col-8 pl-2 pr-0">
+                        <button class="btn answer-btn" id="answer-btn"><i class="fa-regular fa-pen-to-square fa-xl fa-color"></i> Answer</button>
+                        <button class="btn" id="follow-btn"><i class="fas fa-wifi fa-color"></i> Follow</button>
+                        <button class="btn" id="request-btn"><i class="fas fa-share fa-color"></i> Request</button>
+                    </div>
+                    <div class="col-4 pr-5 justify-content-end right-btn" style="display:flex">
+                        <button class="btn"><i class="fas fa-info-circle fa-color"></i></button>
+                        <button class="btn"><i class="far fa-comment fa-color"></i></button>
+                        <button class="btn"><i class="fas fa-arrow-down fa-color"></i></button>
+                        <button class="btn"><i class="fas fa-ellipsis-h fa-color"></i></button>
+                    </div>
+                </div>
+                <div class="card-subtitle pb-1 pt-3 p-3">Ad by Anastasia</div>
+                <div class="card-body pt-1">
+                    <a href="#" class="under-line"><h3>Why should I use Lorem ?</h3></a>
+                    <a href="#" class="text" id="lorem-add">There might be multiple reasons for using Lorem, Nulla ut eleifend ipsum. Morbi eu lectus neque. Nam fringilla mi tortor, vestibulum condimentum sapien rhoncus eu. Maecenas scelerisque vel nisl eget porttitor..</a>
+                    <a href="#" class="under-line">(Continue reading in feed)</a>
+                </div>
+            </div>
+            </div>
+            <!--***************** END (Ad) *****************-->
+
+            <!--***************** Related and recommended *****************-->
+            <div class="row responses-row p-0 pb-1 m-0">
+                <div class="col-8">
+                    <div class="dropdown">
+                        <button class="btn btn-related dropdown-toggle" data-bs-toggle="dropdown">All related (44)</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-text" href="#">All related (2)</a>
+                            <a class="dropdown-item-text" href="#">Answers (2)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 justify-content-end" style="display:flex">
+                    <div class="dropdown">
+                        <button class="btn btn-recommend dropdown-toggle" data-bs-toggle="dropdown">Recommended</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-text" href="#">Recommended</a>
+                            <a class="dropdown-item-text" href="#">Upvotes</a>
+                            <a class="dropdown-item-text" href="#">Recent</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--***************** END (Related and recommended) *****************-->
+            
+            <!--***************** Response card *****************-->
+            <div class="responses-item">
+                <div class="card border-0">
+                    <div class="card-header row m-0 p-0 pb-1 pt-2">
+                        <div class="col-1 p-1"><img src="media/girl-avatar.webp"></div>
+                        <div class="col-10 p-1">
+                            <div class="row m-0 p-0 hihi" style="display:inline-block"><a href="#" class="p-0" style="color: rgb(41, 41, 41)">Anastasia</a><a href="#" class="p-2 text-primary">Follow</a></div>
+                            <div class="row m-0 p-0 text-muted">Front-end developper</div>
+                        </div>
+                        <div class="col-1 p-1"><i class="fas fa-ellipsis-h fa-2x fa-color"></i></div>
+                    </div>
+                    <div class="card-body pb-0">
+                        <p>Hello, i am Anastasia. I am a junior front-end developper and a very curious one. What i love beside developping websites is learning new programming skills. For now, i have been working with Html, Css, Javascript, Jquerry and Bootstrap. With it, 
+                           i can build responsive websites with cool Javascript animations. 
+                           <a class="read-more">Read more..</a> 
+                           <span class="hidden-text" style="display:none">I'm also familiar with some back-end tools like Django and Postgres. I can create both static and dynamic websites.
+                            <br>PS: This website is a copy of the famous Quora website, i created it from scratch with: Html, Css, Javascript and Bootstrap 4. It was a fun experience and a challenge for me.
+                           </span></p>
+                    </div>
+                    <div class="card-footer border-0 pt-0">
+                        <p class="text-muted upvoted-text" style="font-size: 15px; display:none"><i class="fas fa-user-circle"></i> You upvoted this</p>
+                        <div class="btn-group bg-light like-dislike-btn" style="border-radius:50px">
+                            <button type="button" class="btn upvote"><i class="fas fa-arrow-up" style="color:rgb(46, 126, 201)"></i><span class="number-likes"> 156</span></button>
+                            <button type="button" class="btn downvote"><i class="fas fa-arrow-down fa-color"></i></button>
+                        </div>
+                        <button type="button" class="btn circle-btn" style="border-radius:50%"><i class="fas fa-share fa-color"></i></button>
+                        <button type="button" class="btn circle-btn" style="border-radius:50%"><i class="far fa-comment fa-color"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--***************** END (Response card) *****************-->
+
+            <!--***************** Response card *****************-->
+            <div class="responses-item">
+                <div class="card border-0">
+                    <div class="card-header row m-0 p-0 pb-1 pt-2">
+                        <div class="col-1 p-1"><img src="media/avatar.png"></div>
+                        <div class="col-10 p-1">
+                            <div class="row m-0 p-0" style="display:inline-block"><a href="#" class="p-0" style="color: rgb(41, 41, 41)">Esmai Guthrie</a><a href="#" class="p-2 text-primary">Follow</a></div>
+                            <div class="row m-0 p-0 text-muted">Lorem ipsum</div>
+                        </div>
+                        <div class="col-1 p-1"><i class="fas fa-ellipsis-h fa-2x fa-color"></i></div>
+                    </div>
+                    <div class="card-body pb-0">
+                        <p>Sed lacinia sodales neque in euismod. Fusce eleifend quis nunc ac tincidunt. Phasellus enim nisi, convallis ut nibh at, lacinia iaculis nunc. Nunc posuere eros id urna sodales, vel fermentum nulla porta. Morbi vulputate nunc gravida malesuada porta. Integer aliquet aliquam dolor, a lobortis ante commodo in.
+                           <a class="read-more">Read more..</a>
+                           <span class="hidden-text" style="display:none">et luctus tortor condimentum sit amet. Integer nisi sapien, pharetra gravida mi eget, luctus pretium mauris.</span></p>
+                    </div>
+                    <div class="card-footer border-0 pt-0">
+                        <p class="text-muted upvoted-text" style="font-size: 15px; display:none"><i class="fas fa-user-circle"></i> You upvoted this</p>
+                        <div class="btn-group bg-light like-dislike-btn" style="border-radius:50px">
+                            <button type="button" class="btn upvote"><i class="fas fa-arrow-up" style="color:rgb(46, 126, 201)"></i><span class="number-likes"> 6</span></button>
+                            <button type="button" class="btn downvote"><i class="fas fa-arrow-down fa-color"></i></button>
+                        </div>
+                        <button type="button" class="btn circle-btn" style="border-radius:50%"><i class="fas fa-share fa-color"></i></button>
+                        <button type="button" class="btn circle-btn" style="border-radius:50%"><i class="far fa-comment fa-color"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--***************** END (Response card) *****************-->
+
+             <!--***************** Response card *****************-->
+            <div class="responses-item">
+                <div class="card border-0">
+                    <div class="card-header row m-0 p-0 pb-1 pt-2">
+                        <div class="col-1 p-1"><img src="media/avatar.png"></div>
+                        <div class="col-10 p-1">
+                            <div class="row m-0 p-0" style="display:inline-block"><a href="#" class="p-0" style="color: rgb(41, 41, 41)">Macauly Hopper</a><a href="#" class="p-2 text-primary">Follow</a></div>
+                            <div class="row m-0 p-0 text-muted">Lorem ipsum</div>
+                        </div>
+                        <div class="col-1 p-1"><i class="fas fa-ellipsis-h fa-2x fa-color"></i></div>
+                    </div>
+                    <div class="card-body pb-0">
+                        <p>Maecenas porttitor lacinia ante, id lacinia velit rhoncus id. Aliquam pretium lorem in felis aliquet vestibulum. Vivamus quis viverra dui. Fusce euismod pharetra imperdiet.Maecenas accumsan sodales interdum. Nunc porttitor, enim iaculis tempor sodales, odio lectus eleifend metus, at iaculis arcu neque ac ex. Nulla sit amet dapibus turpis, eget vulputate risus. In eu luctus purus, quis vestibulum lectus. 
+                         <a class="read-more">Read more..</a> 
+                         <span class="hidden-text" style="display:none">Pellentesque dictum sodales lorem, vel imperdiet erat eleifend a. Donec malesuada interdum ligula. Duis sodales tellus sed consequat finibus. Sed ullamcorper at tellus quis luctus. Proin elementum egestas tellus a aliquet. Pellentesque quis accumsan nibh. Nam hendrerit lacus et venenatis aliquet. Nam pharetra hendrerit dignissim. Proin pulvinar eros et neque tincidunt, ut congue justo vulputate. Praesent vehicula massa ligula, quis auctor justo ullamcorper id. Fusce ut diam eget magna tempor vulputate ut vel arcu. Sed quis nibh nulla. Cras dignissim leo venenatis neque dictum, sit amet facilisis neque dapibus. Cras sit amet sem eu orci gravida semper. Sed mollis quam vel dapibus feugiat.</span></p>
+                    </div>
+                    <div class="card-footer border-0 pt-0">
+                        <p class="text-muted upvoted-text" style="font-size: 15px; display:none"><i class="fas fa-user-circle"></i> You upvoted this</p>
+                        <div class="btn-group bg-light like-dislike-btn" style="border-radius:50px">
+                            <button type="button" class="btn upvote"><i class="fas fa-arrow-up" style="color:rgb(46, 126, 201)"></i><span class="number-likes"> 15</span></button>
+                            <button type="button" class="btn downvote"><i class="fas fa-arrow-down fa-color"></i></button>
+                        </div>
+                        <button type="button" class="btn circle-btn" style="border-radius:50%"><i class="fas fa-share fa-color"></i></button>
+                        <button type="button" class="btn circle-btn" style="border-radius:50%"><i class="far fa-comment fa-color"></i></button>
+                    </div>
+                </div>
+            </div>
+             <!--***************** END (Response card) *****************-->
+
+             <div class="responses-related my-5">
+                <div class="card border-0">
+                    <div class="card-header">Related questions</div>
+                    <div class="card-body border-0 mb-0 p-0">
+                        <ul style="list-style-type:none; padding:0">
+                            <li><a href="#">Pellentesque pulvinar nunc nec tellus imperdiet, eget vulputate urna eleifend ?</a></li>
+                            <li><a href="#">In erat nulla, volutpat et sapien non, ultricies maximus nulla ?</a></li>
+                            <li><a href="#">Sed euismod fermentum nisi vitae porttitor. Morbi vitae purus dui ?</a></li>
+                            <li><a href="#">Aliquam erat volutpat, curabitur nec sollicitudin ex. Fusce sit amet placerat mi, nunc lacus nisl ?</a></li>
+                            <li><a href="#"> Fusce sodales urna imperdiet augue maximus, ut efficitur neque rutrum ?</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!--******************************** END (RESPONSES OF QUESTION) ********************************-->
+        <div class="col-sm-3 voided-item mx-3 p-0"></div>
+
+        <!--******************************** RELATED QUESTION ********************************-->
+        <div class="col-sm-6 questions mx-3 p-0" style="top: auto; width: 20vw;">
+            <div class="related-questions">
+            <div class="card border-0">
+                <div class="card-header">Related questions</div>
+                <div class="card-body border-0 mb-0 p-0">
+                    <ul style="list-style-type: none; padding:0;">
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a commodo ?</a></li>
+                    <li><a href="#">Nullam at sem vel magna dapibus congue non sit amet justo</a></li>
+                    <li><a href="#">Donec consectetur malesuada nisi id euismod ?</a></li>
+                    </ul>
+                </div>
+                <div class="card-footer border-0 pt-0"><a href="#">Add question</a></div>
+            </div>
+            </div>
+        </div>
+        <!--******************************** END (RELATED QUESTIONS) ********************************-->
+    </div>
+
+
+    <div id="on-top" class="on-top" style="display:none; z-index: 9; position:absolute; top: 0px; left: 0px; width:100vw; height:100%; background-color:rgba(22, 22, 22, 0.822)"></div>
+
+</body>
+</html>

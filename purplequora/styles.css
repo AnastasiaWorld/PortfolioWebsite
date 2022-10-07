@@ -1,0 +1,388 @@
+.container-parent{
+    background-color: rgb(241, 241, 241);
+    background-size: cover;
+    width: 100vw;
+    /*height: 100vh;*/
+}
+.navbar .navbar-brand{
+    color: rgb(100, 0, 146);
+    font-size: 35px;
+    font-family: geneva;
+    font-weight: 700;
+    padding: 0;
+}
+.navbar .navbar-brand:hover{
+    color: rgba(100, 0, 146, 0.753);
+}
+.menu{
+    height: 55px;
+    box-shadow: 0px 3px 8px -6px rgba(87, 87, 87, 0.75);
+    position: static;
+    overflow: unset;
+    background-color: white;
+    box-sizing: border-box;
+    position: relative;
+}
+.menu .navbar .navbar-inline{
+    display: flex; justify-content: center;
+}
+.fa-color{
+    color: rgb(90, 90, 90);
+}
+.absolute-item{
+    display:flex;
+    justify-content: center;
+}
+.box{
+    width: 20vw;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius:5px;
+    border: 1.8px solid rgb(218, 218, 218);
+    display: flex;
+    align-items: center;
+}
+.box input{
+    flex: 1;
+    height: 35px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    /*display:inline-block;*/
+    font-size: 14px;
+    color: rgb(199, 199, 199);
+}
+.box i{
+    display: inline-block;
+    padding-left: 10px;
+}
+.fa-color-search{
+    color: rgb(199, 199, 199);
+}
+
+.absolute-item button{
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 35px;
+    font-family: geneva;
+    font-size: 16px;
+    font-weight: 530;
+    color: rgb(100, 100, 100);
+    border: 0.5px solid rgb(196, 196, 196);
+}
+
+.fa-color-user{
+    color: rgb(26, 80, 151);
+}
+.btn-group .btn-primary {
+    background-color: rgb(100, 0, 146);
+    border: none;
+    border-radius: 35px;
+    height: 35px;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 520;
+    transition: 0.3s;
+}
+.btn-group .btn-primary:hover{
+    background-color: rgb(69, 1, 100)!important;
+}
+.navbar-collapse .nav-item:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+}
+.navbar-collapse .nav-item:hover .fa-color{
+    color: rgb(124, 124, 124);
+}
+.box input:focus{
+    border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.box:focus-within{
+    border: 1.8px solid rgb(22, 106, 202);
+}
+
+
+
+/* ****************************** CONTENT ******************************* */
+.container-parent .row{
+    padding-top: 75px;
+}
+.questions{
+    position: fixed; right: 15vw;
+}
+.responses .responses-add{
+    background-color: white;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.responses .responses-item{
+    background-color: white;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.questions .related-questions{
+    background-color: white;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+}
+.questions .card-header{
+    background-color: white;
+    color: rgb(43, 43, 43);
+    font-weight: 600;
+    font-size: 18px;
+}
+.questions .card-body a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.questions .card-body li{
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-color: rgb(255, 255, 255);
+}
+.questions .card-body li:hover{
+    background-color: rgb(238, 238, 238);
+}
+.questions .card-footer{
+    background-color: rgb(255, 255, 255);
+}
+.questions .card-footer a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+}
+
+.responses .answer-btn{
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 30px;
+    color: rgb(119, 119, 119);
+}
+.responses .card-header .btn{
+    color: rgb(119, 119, 119);
+    font-weight: 600;
+    border-radius: 30px;
+}
+.responses .card-header .btn:hover{
+    background-color: rgb(231, 231, 231);
+    color: rgb(119, 119, 119);
+}
+.responses .right-btn .btn{
+    border-radius: 50%;
+    margin-left: 3px;
+}
+.responses .right-btn .btn:hover{
+    background-color: rgb(226, 226, 226);
+}
+.responses .right-btn{
+    padding-right: 10px;
+}
+.responses .card-header{
+    background-color: white;
+    font-weight: 800;
+    font-size: 23px;
+}
+.responses .card-body{
+    background-color: white;
+}
+.responses .card-body a{
+    text-decoration: none;
+}
+.responses .card-body h3{
+    font-size: 18px;
+    color: rgb(31, 31, 31);
+    font-weight: 800;
+}
+.responses .card-body h3:hover{
+    text-decoration: underline;
+}
+.responses .card-body .under-line:hover{
+    text-decoration: underline;
+}
+.responses .card-body .text{
+    color:rgb(43, 43, 43);
+}
+.responses .card-footer{
+    background-color: white;
+}
+
+.responses .responses-row .btn-related{
+    color: rgb(99, 99, 99); font-weight: 600; font-size: 15px; border-radius: 30px;
+}
+.responses .responses-row .btn-recommend{
+    color: rgb(99, 99, 99); font-weight: 600; font-size: 15px; border: 1px solid rgb(196, 196, 196); border-radius: 30px;
+}
+.responses .responses-row .btn:hover{
+    background-color:rgb(196, 196, 196); color: rgb(99, 99, 99);
+}
+
+.responses .responses-item .card-header{
+    font-size: 13px;
+}
+.responses .responses-item .card-header img{
+    width: 40px; height: auto; border-radius:50%;
+}
+.responses .responses-item .card-header a{
+    text-decoration: none;
+}
+.responses .responses-item .card-header a:hover{
+    text-decoration: underline;
+}
+.responses-item .btn-group .btn{
+    background-color: rgba(241, 241, 241, 0.774); border-radius: 30px;
+}
+.responses-item .btn-group .btn:hover{
+    background-color: rgb(206, 206, 206);
+}
+.responses-item .card-footer .circle-btn:hover{
+    border-radius: 30px; background-color: rgb(206, 206, 206);
+}
+
+.read-more{ cursor: pointer;}
+
+.responses-related{
+    background-color: white;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+}
+.responses-related .card-header{
+    background-color: white;
+    color: rgb(43, 43, 43);
+    font-weight: 600;
+    font-size: 18px;
+}
+.responses-related .card-body a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.responses-related .card-body li{
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.responses-related .card-body li:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+
+.on-top{
+    z-index: 9;
+}
+
+
+
+
+
+@media (min-width: 768px){
+    .menu{
+        display: flex; justify-content: center; align-items: center;
+    }
+    #mynavbar{
+        background-color: white;
+    }
+}
+@media (min-width: 768px) and (max-width: 850px){
+    .btn-group .btn-primary{
+        font-size: 10px;
+    }
+    .absolute-item button{
+        font-size: 13px;  display: flex; align-items: center;
+        
+    }
+    .box input{
+        width: 10px; padding: 10px; 
+    }
+    
+}
+/* Mobile Device */
+@media (max-width: 767px){
+    #mynavbar{
+        margin: -5px; padding-bottom: 10px;
+        border-left: 2px solid rgb(187, 160, 197);
+        border-right: 2px solid rgb(187, 160, 197);
+        border-bottom: 2px solid rgb(187, 160, 197);
+        background-color: rgb(208, 197, 212);
+    }
+    .absolute-item{
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .absolute-item button{
+        width: 20vw;
+    }
+    .menu .home{
+        margin-top: 50px;
+        padding-left: 3vw; padding-right: 3vw;
+    }
+    .box{
+        width: 50vw; border-radius: 30px;
+    }
+    .menu .navbar .navbar-inline{
+        display: flex;
+    }
+    .questions, .voided-item{
+        display: none;
+    }
+    .container-parent .row .col-sm-6{
+        width: 75vw;
+    }
+    .btn-group{
+        width: 80vw; 
+        left: 50%; 
+        transform: translate(-50%);
+    }
+    .responses-item .card-footer .btn-group{
+        width: 30vw; left: 15%;
+    }
+}
+@media (max-width: 505px){
+    .absolute-item button{
+        font-size: 13px; display: flex; align-items: center;
+    }
+}
+@media (max-width: 700px){
+    .responses .answer-btn{
+        margin-left: 2vw;
+    }
+    .responses .right-btn{
+        padding-right: 3px;
+    }
+    .responses .right-btn .btn{
+        margin: 0; padding:3px;
+    }
+    .responses-add .card-header .col-8{
+        margin: 0; padding: 0;
+    }
+    .responses-add .card-header .col-8 .btn{
+        padding: 5px;
+    }
+    .responses .card-header{
+        font-size: 16px;
+    }
+    .responses .card-subtitle{
+        font-size: 13px;
+    }
+    .responses .card-body h3{
+        font-size: 14px;
+    }
+    .responses .card-body .text{
+        font-size: 12px; margin:0; padding: 0;
+    }
+    .responses .card-body .under-line{
+        font-size: 12px;
+    }
+    .responses .responses-item .card-header img{
+        width: 30px;
+    }
+    .responses-item .card-footer .btn-group{
+        width: 30vw; left: 15%;
+    }
+}
