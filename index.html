@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anastasia Portfolio</title>
+    <script type="text/javascript" src="scripts.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+</head>
+
+<body>
+    <div class="grid-container">
+        
+        <div class="principal-page" id="principal-page">
+        <!--**************************************** Menu ******************************************-->
+        <div class="row2" id="row2">
+            <div class="row2-menu" style="position: sticky; top: 18px;">
+            <ul>
+                <li><a href="#" class="menu-link">Home</a></li>
+                <li><a href="#about" class="menu-link">About</a></li>
+                <li><a href="#work" class="menu-link">Work</a></li>
+                <li><a href="#contact" class="menu-link">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="menu-button-container" id="reveal-button">
+            <button class="menu-button" onclick="revealMenu()"><i class="fas fa-bars fa-3x fa-color"></i></button>
+        </div>
+
+        <div class="menu-visible" id="menu-visible">
+            <div class="menu-button-closer" id="close-button">
+                <button class="close-button" onclick="hideMenu()"><i class="fas fa-times fa-3x fa-color"></i></button>
+            </div>
+            <ul>
+                <li><a href="#" class="menu-link">Home</a></li>
+                <li><a href="#about" class="menu-link">About</a></li>
+                <li><a href="#work" class="menu-link">Work</a></li>
+                <li><a href="#contact" class="menu-link">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--**************************************** Big grid ******************************************-->
+        <div class="row3">
+            <div class="middle">
+                <p>Hello, I'm <span>Anastasia</span>.<br>I'm a front-<span>end developper.</span></p>
+                <button type="button" class="button"><a href="#about">View my work</a></button>
+            </div>
+        </div>
+        </div>
+        
+        <!--**************************************** About Me ******************************************-->
+        <div class="row4" id="about">
+            <div class="header">
+                <div class="col-1 hidden"><h1>About <span>me</span></h1></div>
+                <div class="col-2 hidden">
+                    <p>I am a junior front-end developper and a very curious one. What i love beside developping websites is learning new programming skills. For now, i have been working with Html, Css, Javascript and Bootstrap. With it, i can build responsive websites with cool Javascript animations. I'm also familiar with some back-end tools like Django and Postgres. I can create both static and dynamic websites.</p>
+                </div>
+            </div>
+            <div class="skills hidden">
+                <div class="col1"><h1>HTML</h1></div>
+                <div class="col1"><h1>CSS</h1></div>
+                <div class="col1"><h1>JAVASCRIPT</h1></div>
+                <div class="col1"><h1>BOOTSTRAP4</h1></div>
+            </div>
+        
+        </div>
+        <!--**************************************** Work ******************************************-->
+        <div class="row5" id="work">
+            <div class="desktop">
+                <h1 class="hidden">Responsive web pages</h1>
+                <a href="crystalwebsite/index.html" target="_blank"><img class="hidden" src="media/CrystalDesktop.jpg"></a>
+            </div>
+            <div class="mobile hidden">
+                <a href="crystalwebsite/index.html" target="_blank"><img src="media/MobileCrystal.jpg"></a>
+            </div>
+        </div>
+        <!--**************************************** More ******************************************-->
+        <div class="row6">
+            <div class="r-1 r-1-mobile-1">
+                <div class="header hidden"><h1 class="hidden">And <span>more..</span></h1></div><br>
+                <div class="images">
+                    <img class="hidden" style="transition: all 1s ease-in-out" src="media/register-mobile.png">
+                    <img class="hidden" style="transition: 3s" src="media/MobileCrystal.jpg">
+                    <img class="hidden" style="transition: 5s" src="media/login-mobile.png">
+                </div>
+                <div class="arrow"><a href="#next1" class="arrow-down"><i class="fas fa-arrow-down fa-5x arrow-color"></i></a></div>
+            </div>
+            <div class="r-1 r-1-mobile-2" id="next1">
+                <div class="header"><h1 class="hidden">We asked <span>Auora..</span></h1></div><br>
+                <div class="images hidden">
+                    <iframe src="purplequora/index.html" title="description" class="quora-url"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!--**************************************** Contact ******************************************-->
+        <div class="row7">
+            <div class="contact-me">
+                <h1>Contact:</h1><p><i class="far fa-envelope" style="margin-right: 10px"></i>batoulwujud@gmail.com</p>
+            </div>
+            <div class="row7-menu">
+                <ul>
+                    <li><a href="#" class="menu-link">Home</a></li>
+                    <li><a href="#about" class="menu-link">About</a></li>
+                    <li><a href="#work" class="menu-link">Work</a></li>
+                    <li><a href="#contact" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    
+
+    </div>
+
+</body>
+</html>
