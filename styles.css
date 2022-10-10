@@ -526,6 +526,11 @@ body{
     }
 }
 @media (min-width: 300px) and (max-width: 400px){
+    .skills h1{
+        font-size: 15px;
+        width: 38vw; height: 30vw;
+        border: 6px outset rgb(100, 0, 146);
+    }
     .row5{
         height: calc(10vh + 50vw + 100vw + 10vh + 20vh);
     }
