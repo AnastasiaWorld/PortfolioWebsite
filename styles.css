@@ -118,6 +118,7 @@ body{
     display: block;
     /*width: 100vw;*/
     scroll-snap-align: start;
+    padding-top: 5vh;
 }
 .col-1 {width: 35%;}
 .col-2 {width: 65%;}
